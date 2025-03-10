@@ -35,7 +35,7 @@ jobs:
       run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
 
     - name: Copy Required Header File
-      run: cp path/to/header.h build/
+      run: cp XenonUtils/ppc_context.h build/
 
     - name: List Build Directory Contents
       run: ls -R ${{github.workspace}}/build
